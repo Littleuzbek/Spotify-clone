@@ -1,0 +1,61 @@
+.aboutArtist {
+  display: grid;
+  width: 100%;
+  height: auto;
+  background-color: rgb(30, 29, 29);
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.aboutArtist > img {
+  width: 92%;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.SomeText > p {
+  font-weight: bolder;
+  color: white;
+  position: relative;
+}
+
+.SomeText > p {
+  width: fit-content;
+  top: 84%;
+  left: 13px;
+  font-size: 18px;
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+}
+
+.aboutArtist > img,
+.aboutArtist > div,
+.layer {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.layer {
+  width: 92%;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0.4;
+}
+
+@media (min-width: 1921px) and (max-width: 3840px) {
+  .aboutArtist > img {
+    width: 94%;
+    height: 300px;
+  }
+  .layer {
+    width: 94%;
+    height: 94%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.4;
+  }
+}

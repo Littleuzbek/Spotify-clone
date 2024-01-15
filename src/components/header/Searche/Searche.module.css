@@ -1,0 +1,154 @@
+.searche {
+  width: 50%;
+  height: auto;
+  overflow: auto;
+  margin: 0 10px 0 0;
+}
+
+.searcheField {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.backToHome {
+  margin: 0 5px 0 0;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.inputField {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 300px;
+  background-color: rgb(58, 56, 56);
+  border-radius: 20px;
+}
+
+.inputField > input {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  width: 99%;
+  height: 38px;
+  background-color: rgb(58, 56, 56);
+  border: none;
+  border-radius: 20px;
+  text-indent: 2px;
+}
+
+.inputField > input:focus {
+  outline: none;
+}
+
+.searcheBtn {
+  margin: 0 0 0 2px;
+  width: 30px;
+  color: white;
+}
+
+.searche::-webkit-scrollbar {
+  width: 12px;
+}
+.searche::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.searche::-webkit-scrollbar-thumb {
+  background-color: rgb(58, 56, 56);
+}
+
+@media (max-width: 320px) {
+  .searche {
+    width: 82%;
+  }
+  .searcheField {
+    margin: 0 5px;
+  }
+  .inputField > input::placeholder {
+    font-size: 14px;
+  }
+  .backToHome {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .searche {
+    width: 82%;
+  }
+  .searcheField {
+    margin: 0 5px;
+  }
+  .inputField > input::placeholder {
+    font-size: 14px;
+  }
+  .backToHome {
+    display: none;
+  }
+  .inputField {
+    width: 100%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  .searche {
+    width: 82%;
+  }
+  .searche > h1 {
+    font-size: 50px;
+  }
+  .searcheField {
+    margin: 5px 10px 0 10px;
+  }
+  .inputField > input::placeholder {
+    font-size: 20px;
+  }
+  .backToHome {
+    display: none;
+  }
+  .inputField {
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+  }
+  .inputField > input {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .searche {
+    width: 84%;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 3840px) {
+  .searche > h1 {
+    font-size: 60px;
+  }
+  .searcheField {
+    margin: 10px 0 0 0;
+  }
+  .inputField {
+    width: 400px;
+    height: 55px;
+    border-radius: 30px;
+  }
+  .inputField > input {
+    height: 55px;
+    border-radius: 30px;
+    font-size: 25px;
+  }
+  .inputField > input::placeholder {
+    font-size: 21px;
+  }
+  .searcheBtn{
+   width: 40px; 
+   height: 20px;
+  }
+}

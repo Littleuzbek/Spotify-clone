@@ -1,0 +1,117 @@
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.controlBtn {
+  width: 30px;
+  height: 30px;
+  color: white;
+  margin: 0 10px;
+}
+
+.controlBtn:nth-of-type(1) {
+  width: 15px;
+}
+
+.controlBtn:nth-of-type(5) {
+  width: 15px;
+}
+
+.shuffle {
+  width: 15px;
+  height: 30px;
+  color: rgb(47, 251, 47);
+  margin: 0 10px;
+}
+
+.repeat {
+  width: 15px;
+  height: 30px;
+  color: rgb(47, 251, 47);
+  margin: 0 10px;
+}
+
+.animBtn {
+  width: 30px;
+  height: 30px;
+  color: white;
+  margin: 0 10px;
+  animation: anim 0.3s ease;
+}
+
+@keyframes anim {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 325px) and (max-width: 430px) {
+  .animBtn {
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: 0 10px;
+    animation: anim 0.3s ease;
+  }
+  .controlBtn {
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  .controls {
+    margin: 10px 0 0 0;
+  }
+  .animBtn {
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin: 0 20px;
+    animation: anim 0.3s ease;
+  }
+  .controlBtn {
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin: 0 20px;
+  }
+  .repeat,
+  .shuffle {
+    margin: 0 20px;
+    width: 20px;
+  }
+  .controlBtn:nth-of-type(1),
+  .controlBtn:nth-of-type(5) {
+    width: 20px;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 3840px) {
+  .animBtn {
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: 0 20px;
+    animation: anim 0.3s ease;
+  }
+  .controlBtn {
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: 0 20px;
+  }
+  .controlBtn:nth-of-type(1),
+  .controlBtn:nth-of-type(5) {
+    width: 20px;
+  }
+}

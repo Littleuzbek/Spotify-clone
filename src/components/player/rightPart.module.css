@@ -1,0 +1,72 @@
+.rightPart {
+  display: flex;
+  align-items: center;
+}
+
+.microPhone {
+  width: 15px;
+  color: white;
+}
+
+.rightPart > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.rightPart > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.volumeDown {
+  width: 60px;
+  height: 19px;
+  color: white;
+}
+
+.volumeUp {
+  width: 60px;
+  height: 19px;
+  color: white;
+}
+
+.volume {
+  width: 90%;
+  accent-color: white;
+  height: 5px;
+  margin: 0 15px 0 0;
+  transition: 0.4s;
+}
+
+.volume:hover {
+  accent-color: rgb(47, 251, 47);
+}
+
+@media (max-width: 1023px) {
+  .rightPart {
+    display: none;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 3840px) {
+  .microPhone {
+    width: 50px;
+    height: 21px;
+  }
+  .volumeDown {
+    width: 50px;
+    height: 25px;
+    color: white;
+  }
+  .volumeUp {
+    width: 50px;
+    height: 25px;
+    color: white;
+  }
+  .volume {
+    height: 7px;
+  }
+}

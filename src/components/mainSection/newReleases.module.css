@@ -1,0 +1,97 @@
+.newReleases {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+}
+
+.newReleases > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 200px;
+  cursor: pointer;
+  /* background-color: rgb(58, 56, 56); */
+  border-radius: 8px;
+}
+
+.newReleases > div > div {
+  width: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.newReleases > div > div > p {
+  display: -moz-inline-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 30px;
+  max-width: 80%;
+}
+
+.newReleases > div > img {
+  width: 90%;
+  height: 100%;
+  margin: 8px 0 0 0;
+  border-radius: 8px;
+}
+
+/* .btn {
+     width: 100%;
+     position: absolute;
+     background-color: black;
+} */
+
+@media (max-width: 325px) {
+  .newReleases > div {
+    width: 31%;
+    height: 111px;
+  }
+  .newReleases > div > img {
+    height: 110px;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 430px) {
+  .newReleases > div {
+    width: 32.5%;
+    height: auto;
+  }
+  .newReleases > div > img {
+    height: 110px;
+  }
+  .newReleases > div > div > p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  .newReleases > div {
+    width: 34%;
+    height: auto;
+  }
+  .newReleases > div > img {
+    height: 180px;
+  }
+  .newReleases > div > div > p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 3840px) {
+  .newReleases > div {
+    width: 35%;
+    height: auto;
+  }
+  .newReleases > div > img {
+    height: 250px;
+  }
+  .newReleases > div > div > p {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,43 @@
+.index {
+     position: sticky;
+     top: 0;
+     width: 99%;
+     display: grid;
+     grid-template-columns: 5% 44% 43% auto;
+     margin: 10px 0 10px 0;
+     border-bottom: 1px solid grey;
+}
+
+.background{
+     position: sticky;
+     top: 0;
+     width: 99%;
+     display: grid;
+     grid-template-columns: 6% 44% 43% auto;
+     margin: 10px 0 10px 0;
+     padding: 5px 0;
+     border-bottom: 1px solid grey;
+     background-color: rgb(58, 56, 56); 
+     border-radius: 0 0 5px 5px;
+}
+
+.background,.index > p:nth-of-type(1){
+     padding: 0 0 0 7px;
+}
+
+@media (max-width:1023px) {
+     .index {
+          display: none;
+     }
+     .background{
+          display: none;
+     }
+}
+
+@media (min-width:1023px) and (max-width:1399px) {
+.index,.background{
+     grid-template-columns: 6% 44% 40% auto;
+}
+}
+
+

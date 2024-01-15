@@ -1,0 +1,43 @@
+.rightSection {
+  /* min-width: 10%; */
+  width: 23%;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.rightSection::-webkit-scrollbar {
+  width: 12px;
+}
+.rightSection::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.rightSection::-webkit-scrollbar-thumb {
+  margin: 0 0 0 15px;
+  background-color: rgb(58, 56, 56);
+}
+
+@media (max-width:1023px) {
+  .rightSection{
+    display: none;
+  }
+}
+
+@media (min-width:1023px) and (max-width:1400px) {
+  .rightSection{
+    width: 28%;
+  }
+}
+
+@media (min-width:1400px) and (max-width:1400px) {
+  .rightSection{
+    width: 24.5%;
+  }
+}
+
+@media (min-width:1800px) and (max-width:2685px) {
+  .rightSection{
+    width: 22%;
+  }
+}

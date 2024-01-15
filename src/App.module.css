@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@100;200;300;400;500;600;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sulphur Point";
+  user-select: none;
+}
+
+.outOfBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80vh;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  position: absolute;
+  opacity: 1;
+  animation: reappear 1.5s ease;
+  bottom: 10%;
+  
+}
+
+.body > div:nth-of-type(1) {
+  display: flex;
+  width: 100%;
+  height: 83.5%;
+}
+
+.body > div:nth-of-type(2) {
+  width: 100%;
+  height: 16.5%;
+  position: absolute;
+  bottom: 0px;
+}
+
+p {
+  color: white;
+}
+
+iframe {
+  display: none;
+}
+
+.animation {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .animation > span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.animation > span:nth-of-type(1){
+    animation: anim 1s infinite;
+    animation-delay: 0.1s;
+} 
+
+.animation > span:nth-of-type(2){
+    animation: anim 1s infinite;
+    animation-delay: 0.3s;
+} 
+
+.animation > span:nth-of-type(3){
+    animation: anim 1s infinite;
+    animation-delay: 0.6s;
+}  */
+
+@keyframes anim {
+  from {
+    scale: 0.7;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.nextImg {
+  width: 50px;
+  height: 50px;
+  color: black;
+  position: absolute;
+  right: 0;
+}
+
+.previousImg {
+  width: 50px;
+  height: 50px;
+  color: black;
+  position: absolute;
+  left: 0;
+  transform: scaleX(-1);
+}
+
+.nextImg:hover {
+  width: 52px;
+  height: 52px;
+}
+.previousImg:hover {
+  width: 52px;
+  height: 52px;
+}
+
+.message {
+  width: 60%;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: message 1.5s ease forwards;
+  position: absolute;
+  top: 0;
+}
+
+.message > p {
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 0 10px;
+}
+
+.WelcomeUsers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 40px;
+}
+
+.hiddenBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 4%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.086);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  animation: hiddenBody 1s ease;
+}
+
+.hiddenBody > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2% 2%;
+  animation: round 10s linear infinite;
+}
+.hiddenBody > div > p{
+  width: 100%;
+  margin: 0 10px 0 0;
+  color: white;
+  mix-blend-mode: difference;
+  font-weight: bolder;
+}
+
+.bodyRemoved {
+  width: 80%;
+  position: absolute;
+  opacity: 0;
+  top: -10000%;
+}
+
+.hideBodyBtn{
+  width: 3%;
+  height: 6%;
+  position: absolute;
+  top: 0;
+  right: 1%;
+  transition: 1s;
+  animation: hideBodyBtn 1s ease;
+}
+
+.reappearBtn{
+  width: 3%;
+  height: 6%;
+  position: absolute;
+  top: 0;
+  right: 1%;
+  transition: 1s;
+  margin: 0 0 0 10px;
+  animation: reappearBtn 1s ease;
+}
+
+@keyframes reappearBtn {
+  from{
+    transform: rotate(90deg);
+  }to{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes hideBodyBtn {
+  from{
+    transform: rotate(-90deg);
+  }to{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes hiddenBody {
+  from{
+    top: -10%;
+    right: 4%;
+    width: 0%;
+    height: 0;
+  }to{
+    top: 0;
+    right: 4%;
+    width: auto;
+    height: auto;
+  }
+}
+
+@keyframes reappear {
+  0% {
+    /* width: 50px;
+    height: 50px;
+    background-color: black; */
+    bottom: -100%;
+    left: 10%;
+  }
+  100% {
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    position: absolute;
+    transition: 1s;
+  }
+}
+
+@keyframes round {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes message {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: none;
+  }
+
+  .outOfBody {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .WelcomeUsers {
+    display: none;
+  }
+
+  .outOfBody > div:nth-of-type(1){
+    display: none;
+  }
+
+  .body > div:nth-of-type(1) {
+    height: 84.5%;
+  }
+  .body > div:nth-of-type(2) {
+    height: auto;
+  }
+  .img {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .body {
+    width: 85%;
+  }
+  .WelcomeUsers {
+    font-size: 20px;
+    width: 26%;
+  }
+  /* .body > div:nth-of-type(1) {
+    border: .5px solid red;
+  }
+  .body > div:nth-of-type(2) {
+    border: .5px solid red;
+  } */
+}
+
+@media (min-height: 1024px) {
+  .body > div:nth-of-type(1) {
+    height: 90%;
+  }
+  .body > div:nth-of-type(2) {
+    height: 10%;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 3840px) {
+  .WelcomeUsers {
+    width: 22%;
+  }
+}

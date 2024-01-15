@@ -1,0 +1,91 @@
+.recommended {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+}
+
+.recommended > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 240px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.recommended > div > div {
+  width: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.recommended > div > div > p {
+  display: -moz-inline-box;
+  height: 30px;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recommended > div > img {
+  width: 90%;
+  height: 100%;
+  margin: 15px 0 0 0;
+  border-radius: 8px;
+  padding: 1px;
+}
+
+@media (max-width: 325px) {
+  .recommended > div {
+    width: 31%;
+    height: 111px;
+  }
+  .recommended > div > img {
+    height: 110px;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 430px) {
+  .recommended > div {
+    width: 32.5%;
+    height: auto;
+  }
+  .recommended > div > img {
+    height: 110px;
+  }
+  .recommended > div > div > p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  .recommended > div {
+    width: 34%;
+    height: auto;
+  }
+  .recommended > div > img {
+    height: 180px;
+  }
+  .recommended > div > div > p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 3840px) {
+  .recommended > div {
+    width: 35%;
+    height: auto;
+  }
+  .recommended > div > img {
+    height: 250px;
+  }
+  .recommended > div > div > p {
+    font-size: 22px;
+  }
+}

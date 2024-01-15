@@ -1,0 +1,52 @@
+.aboutMusic {
+  width: 100%;
+  height: auto;
+  background-color: rgb(30, 29, 29);
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.aboutMusic > p {
+  font-weight: bolder;
+  margin: 5px 10px;
+  font-size: 15px;
+}
+
+.aboutMusic > img {
+  width: 92%;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.aboutMusic > div {
+  padding: 0 0 10px 0;
+}
+
+.aboutMusic > div > p {
+  margin: 0 0 0 10px;
+}
+
+.aboutMusic > div > p:nth-of-type(1) {
+  font-size: 30px;
+  display: -moz-inline-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (min-width: 1023px) and (max-width: 1399px) {
+  .aboutMusic {
+    width: 100%;
+  }
+}
+
+@media (min-width:2000px) and (max-width: 3840px) {
+  .aboutMusic {
+    width: 100%;
+  }
+  .aboutMusic > img {
+    width: 94%;
+    height: 300px;
+  }
+}

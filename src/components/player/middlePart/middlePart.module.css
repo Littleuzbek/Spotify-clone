@@ -1,0 +1,38 @@
+.MiddlePart{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     height: 80px;
+     margin: 0 0 0 3%;
+}
+
+@media (max-width:325px) {
+     .MiddlePart{
+          width: 100%;
+          height: 100%;
+          margin: 0 0 7% 0;     
+     }
+}
+
+@media (min-width:320px) and (max-width: 430px){
+     .MiddlePart{
+          width: 100%;
+          height: 100%;
+          margin: 2% 0 5% 0;  
+     }
+}
+
+@media (min-width:426px) and (max-width: 1023px){
+     .MiddlePart{
+          width: 100%;
+          height: 100%;
+          margin: 0 0 0 0;  
+     }
+}
+
+@media (min-width: 1800px) and (max-width: 3840px) {
+     .MiddlePart{
+          margin: 10px 0 0 0;
+     }
+}

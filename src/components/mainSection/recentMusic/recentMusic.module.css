@@ -1,0 +1,136 @@
+.recentMusic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.recentMusic > p {
+  font-size: 30px;
+}
+
+.recentMusic > div {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: rgb(58, 56, 56);
+  cursor: pointer;
+}
+
+.recentMusic > div > img {
+  max-width: 60px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+}
+
+.recentMusic > div > p {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: bolder;
+  color: white;
+  margin: 5.5px;
+}
+
+@media (max-width: 320px) {
+  .recentMusic > div {
+    width: 46%;
+    height: 40px;
+    margin: 3px;
+  }
+  .recentMusic > div > p {
+    all: unset;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 10px;
+    color: white;
+    overflow: hidden;
+    margin: 2px;
+  }
+  .recentMusic > div > img {
+    max-width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 430px) {
+  .recentMusic > div {
+    width: 48%;
+    height: 60px;
+    margin: 5px 3px;
+  }
+  .recentMusic > div > p {
+    all: unset;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 13.5px;
+    color: white;
+    overflow: hidden;
+    margin: 2px;
+  }
+  .recentMusic > div > img {
+    max-width: 50px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  .recentMusic > div {
+    width: 49%;
+    height: 70px;
+    margin: 5px 2px;
+  }
+  .recentMusic > div > p {
+    all: unset;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    overflow: hidden;
+    margin: 2px;
+  }
+  .recentMusic > div > img {
+    max-width: 60px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .recentMusic > div > p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .recentMusic > div {
+    width: 45%;
+    margin: 1%;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 3840px) {
+  .recentMusic > div {
+    width: 48%;
+    margin: 1%;
+    height: 65px;
+  }
+  .recentMusic > div > img {
+    max-width: 80px;
+    width: 80px;
+    height: 65px;
+    border-radius: 5px 0 0 5px;
+  }
+  .recentMusic > div > p {
+    font-size: 20px;
+  }
+}

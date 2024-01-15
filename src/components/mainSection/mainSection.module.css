@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@100;200;300;400;500;600;700&display=swap);
+.mainSection {
+     width: 50.9%;
+     height: auto;
+     overflow: auto;
+}
+
+.mainSection::-webkit-scrollbar {
+     display: none;
+}
+
+.mainSection > p{
+     font-family: Sulphur Point;
+     font-weight: bolder;
+     margin: 10px;
+}
+
+@media (max-width:325px) {
+     .mainSection{
+          width: 82%;
+     }
+}
+
+@media (min-width:325px) and (max-width:430px) {
+     .mainSection{
+          width: 82%;
+     }
+     .mainSection > p:nth-of-type(1),p:nth-of-type(2),p:nth-of-type(3){
+          font-size: 25px;
+     }
+}
+
+@media (min-width:426px) and (max-width:1023px) {
+     .mainSection{
+          width: 82%;
+     }
+     .mainSection > p:nth-of-type(1),p:nth-of-type(2),p:nth-of-type(3){
+          font-size: 25px;
+     }
+}
+
+@media (min-width:700px) and (max-width:1023px) {
+     .mainSection{
+          width: 84%;
+     }
+     .mainSection > p:nth-of-type(1),p:nth-of-type(2),p:nth-of-type(3){
+          font-size: 30px;
+     } 
+}
+
+@media (min-width:1024px) and (max-width:1399px) {
+     .mainSection{
+          min-width: 45%;
+     }
+}
+
+@media (min-width:1780px) and (max-width:1999px) {
+     .mainSection > p{
+          margin: 20px;
+     }
+}
