@@ -203,6 +203,10 @@ export default function TimeLine({
         onChange={(e) => {
           changeTime(e.target.value);
         }}
+        onTouchMove={
+          (e) => {
+            changeTime(e.target.value);
+          }}
         onMouseUp={ChangeTimeAndPlay}
         onMouseOver={progressColorChangeGreen}
         onMouseOut={progressColorChangeWhite}
