@@ -37,6 +37,9 @@ export default function AlbumItems({
         onClick={() => {
           GetMusic(songNumber, image);
         }}
+        onTouchStart={() => {
+          GetMusic(songNumber, image);
+        }}
       >
         <div className={classes.index}>
           <p>{songNumber + 1}</p>
