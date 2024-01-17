@@ -22,7 +22,6 @@ export default function AlbumInfo() {
                <div>
                     <p>{albumInfos?.at(-1)?.name}</p>
                     <p>{`Total tracks: ${totalTracks}`}</p>
-                    <p>album time</p>
                </div>
           </div>
      )
