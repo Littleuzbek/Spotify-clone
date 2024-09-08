@@ -2,7 +2,6 @@ import classes from "./timeLine.module.css";
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { linkActions } from "../../../redux/linkSlice";
-import authActions from "../../../redux/authSlice"
 
 export let audioRef = {};
 
@@ -122,16 +121,12 @@ export default function TimeLine({
           setCurrentIndex(0);
         }
       } else {
-        if (audioRef.current.src === audioSrc) {
-          return;
-        } else {
           audioRef.current.src = "";
           audioRef.current.src = audioSrc;
           setMusicTimeIndicator(true);
           play();
           startTimer();
           dispatch(linkActions.addTrack(infoForRightSection));
-        }
       }
     } catch (error) {
       window.location.reload();

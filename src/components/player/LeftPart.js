@@ -16,8 +16,6 @@ export default function LeftPart({ songIndex, signalToChangeAlbumType }) {
     setAlbum(queueStore);
   }, [signalToChangeAlbumType]);
 
-  console.log(signalToChangeAlbumType);
-
   let trackName;
   if (albumType) {
     if (albumType === "album") {
