@@ -13,7 +13,7 @@ const Header = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    APIKit.get("me/playlists").then((response) => {
+    APIKit.get(`me/playlists`).then((response) => {
       setLibrary(response.data.items);
     });
   }, []);
